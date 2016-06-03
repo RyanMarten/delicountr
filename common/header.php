@@ -4,7 +4,7 @@
 <head>
     <!-- add all dependencies here -->
 
-    <title>Deli Countr |  <!-- Do Something Smart Here --></title>
+    <title>Deli Countr |  <?php echo $pageTitle ?> </title>
 
     <!-- Add the link to the favicon -->
 
