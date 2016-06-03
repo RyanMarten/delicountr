@@ -1,20 +1,26 @@
-# delicountr
+delicountr
+==========
+
+- - - - 
+
 
 ##Introduction
-This web application was developed as part of a final in an Intro to CS class.
+This web application was developed as a final project in WHS Intro to CS class.
 
 ####Goals
-The goal of this projects was to create a web version of a deli counter ticket system that is used in a classroom setting, used to 
-organize students who need help with their code. A student should be able to take a ticket (digitally) by entering their name. 
-This name will be added to a queue. The website will display what their ticket number is and what number is currently being "served".
-Also, this application should let two or more teachers be able to serve the same queue at the same time, which was hard with the physical version. 
+The goal of this project was to create a web version of a deli ticket dispenser system that is used in a classroom setting to 
+organize students who need help with their code. A student is be able to take a ticket (digitally) by entering their name. This name is added to a queue and the webpage will display their ticket number and the number that is currently being "served".
+Also, this application lets two or more teachers serve the same queue at the same time, which was a problem with the physical version. 
+
 The teacher will have a seperate page that they use for recieving the name (and number) of the student that they can serve. 
-There are also options for the teacher to view the whole queue, edit the queue, and delete the queue.
+There teacher also has the options to view the whole queue, edit the queue, and delete the queue.
 
 
 ####Future Features
-Additional features can include creating a new queue, so there can be multiple queues for multiple classrooms at the same time, and a special "sharing" link is generated for each queue. 
-Password protecting the teacher page, and being able to change that password. Also security of the application, and protection from it being broken can be improved. 
+Additional features could include... 
+* Options for creating a new queue with and a unique generated "sharing" link or pin, so there can be multiple queues for multiple classrooms at the same time.
+* Password protection/login for the teacher page, which would include a feature for changing this password
+* Improved security of the application, and protection from it being broken can be improved. 
 
 ##Dependencies
 The run this web application you need
@@ -28,9 +34,10 @@ This will run on the xampp distro, which is very friendly for new users.
 
 The SQL statements needed for setting up the database are in the file `sqlstatements.txt`
 
-##Contributions
-Any ideas to improve this project are appreciated. :D 
+##Contributions 
+:fire: Any ideas to improve this project are appreciated. 
+
 
 Thanks 
 
---Ryan 
+--Ryan :smile: 
