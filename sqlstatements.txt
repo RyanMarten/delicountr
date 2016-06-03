@@ -1,0 +1,30 @@
+Fixing password/user:
+UPDATE mysql.user SET user='root',
+ password=PASSWORD('') WHERE user='newusername';
+ FLUSH PRIVILEGES;
+
+In terminal:
+mysql-ctl start
+mysql-ctl cli
+
+In cli:
+SHOW DATABASES;
+CREATE DATABASE dc_db DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE TABLE dc_db.tickets;        //or can use USE dc_db; to select the database first
+(
+    ticketID      INT PRIMARY KEY AUTO_INCREMENT,
+    ticketName    VARCHAR(50) NOT NULL,
+    ticketDesc    VARCHAR(150)
+)
+
+CREATE TABLE dc_db.users
+(
+    UserID      INT PRIMARY KEY AUTO_INCREMENT,
+    Username    VARCHAR(150) NOT NULL,
+    Password    VARCHAR(150),
+    ver_code    VARCHAR(150),
+    verified    TINYINT DEFAULT 0
+)
+
+INSERT INTO tickets (ticketID, ticketName, ticketDesc) VALUES (1, 'Ryan Marten', 'Need Help with SQL!');
+
