@@ -1,13 +1,15 @@
 /* HEADER */
 
-i {
-    font-size: 36px;
-}
-
 .header {
     background-color: #931818;
-    height: 80px;
-    margin: -15px;
+    height: 60px;
+}
+
+.title {
+    font-size: 42px;
+    font-family: 'Montserrat', monospace;
+    color: white;
+    text-shadow: 1px 1px black; 
 }
 
 /* MENU */
