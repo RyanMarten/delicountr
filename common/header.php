@@ -3,7 +3,6 @@
 
 <head>
     <!-- add all dependencies here -- move scripts to after body for better preformance later -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="common/style.css">
     <script src="https://use.fontawesome.com/ba4f9520e8.js"></script>
 	<meta charset="utf-8">
