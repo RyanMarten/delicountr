@@ -5,7 +5,7 @@
    <noscript>This site won't update without Java Script</noscript>
    <div class="row">
       <div class="xs-col-8 xs-col-push-2">
-      <a href="#"><img class="img-reponsive" src="images/ticket.png"/></a>
+      <a href="#"><img class="img-reponsive" src="images/ticket.png" height="100" width="100"/></a>
       </div>
    </div>
    
