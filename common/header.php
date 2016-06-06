@@ -17,8 +17,8 @@
 <body>
     <noscript>This site won't work without Java Script</noscript>
     <header>
-        <div class="header row">
-           <div class="title"> <p class="text-center">Delicountr</p></div>
+        <div class="header">
+            <p class="text-center title">Delicountr</p></div>
         </div>
     </header>
     <div class="container">
