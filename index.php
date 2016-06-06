@@ -1,25 +1,20 @@
 <?php include_once "common/header.php"; ?>
 
       <div id="main">
-      
-         
-         <!-- 
-         <div class="row">
-            <div class="xs-col-8 xs-col-push-2">
-            <a href="#"><img class="img-reponsive" src="images/ticket.png" height="100" width="100"/></a>
-            </div>
-         </div>
-         -->
-         
-         
-         <!-- IF IN QUEUE -->
-      
+      <div class="jumbotron">
+         <!-- IF NOT IN QUEUE -->
+            <img class="img-reponsive center-block logo" src="images/ticket.png" alt="delicountr logo"/>
+            <form>
+                <input type="text" class="form-control center-block" id="ticketName" placeholder="Name">
+                <button type="submit" class="btn btn-primary center-block">Submit</button>
+            </form>
+            
                 <!-- Content here -->
       
-         <!-- IF NOT IN QUEUE -->
+         <!-- IF IN QUEUE -->
       
                 <!-- Alternate content here -->
-      
+      </div>
       </div>
 
 

@@ -13,9 +13,21 @@
 }
 
 /* MENU */
+.logo {
+    width: 300px;
+}
 
+#ticketName {
+    width: 350px;
+    margin-top: 30px;
+}
+
+.jumbotron {
+    background-color: white;
+}
 
 /*ENTER QUEUE*/
+
 
 
 /* FOOTER */

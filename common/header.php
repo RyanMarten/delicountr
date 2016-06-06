@@ -12,6 +12,8 @@
     <title>Delicountr |  <?php echo $pageTitle ?> </title>
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
 </head>
 
 <body>
