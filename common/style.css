@@ -1,10 +1,4 @@
 /* HEADER */
-
-.header {
-    background-color: #931818;
-    height: 60px;
-}
-
 .title {
     font-size: 42px;
     font-family: 'Montserrat', monospace;
@@ -13,9 +7,7 @@
 }
 
 /* MENU */
-.logo {
-    width: 300px;
-}
+
 
 #ticketName {
     width: 350px;

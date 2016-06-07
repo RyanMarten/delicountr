@@ -1,20 +1,26 @@
 <?php include_once "common/header.php"; ?>
 
       <div id="main">
-      <div class="jumbotron">
          <!-- IF NOT IN QUEUE -->
-            <img class="img-reponsive center-block logo" src="images/ticket.png" alt="delicountr logo"/>
-            <form>
-                <input type="text" class="form-control center-block" id="ticketName" placeholder="Name">
-                <button type="submit" class="btn btn-primary center-block">Submit</button>
+         <div class="row">
+            <img class="col s2 responsive-img offset-s5" src="images/ticket.png" alt="delicountr logo"/>
+        </div>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s4 offset-s4">
+                        <input id="name" type="text">
+                        <label for="name">First Name</label>
+                    </div>
+                </div>
             </form>
-            
-                <!-- Content here -->
+            <a class="waves-effect waves-light btn"><i class="material-icons left">warning</i>button</a>
+        </div>    
+        
       
          <!-- IF IN QUEUE -->
       
                 <!-- Alternate content here -->
-      </div>
       </div>
 
 
