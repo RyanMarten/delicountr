@@ -1,10 +1,12 @@
 var main = function(){
-    $("#description").hide();
-    $('label[for="description"]').hide();
+    $(".description").hide();
+ //   $("#description").hide();
+  //  $('label[for="description"]').hide();
     $(".button-collapse").sideNav();
     $("#name").keydown(function() {
-        $('label[for="description"]').fadeTo(5000, 1);
-        $("#description").fadeTo(5000, 1)
+        $(".description").slideDown('slow');
+        //$('label[for="description"]').show();
+        //$("#description").show();
     });
 } 
 $(document).ready(main); 
