@@ -2,24 +2,28 @@
 <html>
 
 <head>
-    <!-- add all dependencies here -- move scripts to after body for better preformance later -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="common/style.css">
-    <script src="https://use.fontawesome.com/ba4f9520e8.js"></script>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <title>Delicountr |  <?php echo $pageTitle ?> </title>
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-</head>
+  <!-- META -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- CSS  -->
+  <link rel="stylesheet" type="text/css" href="../common/style.css">
+  <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Montserrat'>
+  <link rel="stylesheet" type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <script src="../common/script.js"></script>
+
+  <!-- FAVICON // FONTS // ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+   <script src="https://use.fontawesome.com/ba4f9520e8.js"></script>
+
+  <!-- TITLE -->
+  <title>Delicountr |
+    <?php echo $pageTitle ?> </title>
+
+</head>
 <body>
-    <noscript>This site won't work without Java Script</noscript>
-    <header>
-        <div class="header">
-            <p class="text-center title">Delicountr</p></div>
-        </div>
-    </header>
-    <div class="container">
-    <!-- Add basic page divs (remember to close the divs and body in the footer.php) -->
