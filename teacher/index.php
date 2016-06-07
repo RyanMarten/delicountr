@@ -8,20 +8,20 @@
                 <a href="/index.php" class="brand-logo title center">Delicountr</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="left hide-on-med-and-down">
-                    <li><a href="view.php">Serve</a></li>
-                    <li><a href="view.php">View</a></li>
-                    <li><a href="edit.php">Edit</a></li>
+                    <li class="active"><a href="/teacher/index.php">Serve</a></li>
+                    <li><a href="/teacher/view.php">View</a></li>
+                    <li><a href="/teacher/edit.php">Edit</a></li>
                     <li>
-                        <a class="waves-effect waves-red btn white">
+                        <a class="waves-effect waves-red btn white clear">
                             <div class="red-text">Clear</div>
                         </a>
                     </li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
-                    <li><a href="view.php">Serve</a></li>
+                    <li class="active"><a href="view.php">Serve</a></li>
                     <li><a href="view.php">View</a></li>
                     <li><a href="edit.php">Edit</a></li>
-                    <li><a class="waves-effect waves-light btn red lighten-1">Clear</a></li>
+                    <li><a class="waves-effect waves-light btn red lighten-1 clear">Clear</a></li>
                 </ul>
             </div>
         </nav>
@@ -33,9 +33,11 @@
         <div class="col s12 m6  offset-m3">
           <div class="card teal lighten-1">
             <div class="card-content white-text">
-              <span class="card-title">Card Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+              <span class="card-title">#314</span>
+              <p>Name: Ryan Marten</p>
+              <br>
+              <p> Description: I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively. </p>
             </div>
             <div class="card-action">
               <a class="waves-effect waves-red btn white">
@@ -49,4 +51,5 @@
         
     </main>
 </body>
+
 <?php include_once "../common/footer.php"; ?>

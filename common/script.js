@@ -1,13 +1,12 @@
 var main = function(){
     $(".description").hide();
- //   $("#description").hide();
-  //  $('label[for="description"]').hide();
     $(".button-collapse").sideNav();
     $("#name").keydown(function() {
-        $(".description").slideDown('slow');
-        //$('label[for="description"]').show();
-        //$("#description").show();
+    $(".description").slideDown('slow');
     });
+    $('.clear').click(function() {
+        confirm("Are you sure you want to clear the whole queue?");
+        });
 } 
 $(document).ready(main); 
   
