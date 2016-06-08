@@ -6,6 +6,7 @@ delicountr
 
 ##Introduction
 This web application was developed as a final project in WHS Intro to CS class.
+See the project [document](https://docs.google.com/document/d/1Gp1qv0JfnpTinqzXSxgfFN67vpEfpDjIKcxZA5FwL6I/edit?usp=sharing) for more information. 
 
 ####Goals
 The goal of this project was to create a web version of a deli ticket dispenser system that is used in a classroom setting to 
