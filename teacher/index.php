@@ -5,7 +5,7 @@
     <header>
         <nav>
             <div class="nav-wrapper red">
-                <a href="/index.php" class="brand-logo title center">Delicountr</a>
+                <a href="/index.php" class="brand-logo title-header center">Delicountr</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="left hide-on-med-and-down">
                     <li class="active"><a href="/teacher/index.php">Serve</a></li>
@@ -13,14 +13,13 @@
                     <li><a href="/teacher/edit.php">Edit</a></li>
                     <li>
                         <a class="waves-effect waves-red btn white clear">
-                            <div class="red-text">Clear</div>
+                            <div class="red-color">Clear</div>
                         </a>
                     </li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
-                    <li class="active"><a href="view.php">Serve</a></li>
+                    <li class="active"><a href="index.php">Serve</a></li>
                     <li><a href="view.php">View</a></li>
-                    <li><a href="edit.php">Edit</a></li>
                     <li><a class="waves-effect waves-light btn red lighten-1 clear">Clear</a></li>
                 </ul>
             </div>
@@ -33,16 +32,17 @@
         <div class="col s12 m6  offset-m3">
           <div class="card teal lighten-1">
             <div class="card-content white-text">
-              <span class="card-title">#314</span>
-              <p>Name: Ryan Marten</p>
+              <span class="card-title">#314 </span>
+              <h5>Name: Ryan Marten</h5>
               <br>
               <p> Description: I am a very simple card. I am good at containing small bits of information.
               I am convenient because I require little markup to use effectively. </p>
             </div>
             <div class="card-action">
-              <a class="waves-effect waves-red btn white">
-                            <div class="red-text">Done</div>
+              <a class="waves-effect waves-grey btn white">
+                            <div class="black-color">Done</div>
               </a>
+            </div>
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@
   <header>
     <nav>
       <div class="nav-wrapper red">
-        <a href="#!" class="brand-logo title center">Delicountr</a>
+        <a href="#!" class="brand-logo title-header center">Delicountr</a>
       </div>
     </nav>
     </div>
@@ -34,7 +34,7 @@
             </form>
         </div>
         <div class="row">
-            <div class="col m6 offset-m3 s10 offset-s1 l6 offset-l3 waves-effect waves-light btn-large" href="#" onclick="Materialize.toast('Ticket successfully added', 4000)">
+            <div class="col m8 offset-m2 s10 offset-s1 l6 offset-l3 waves-effect waves-light btn-large" href="#" onclick="Materialize.toast('Ticket successfully added', 4000)">
                 take a ticket
             </div>
         </div>
