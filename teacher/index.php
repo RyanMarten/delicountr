@@ -10,7 +10,6 @@
                 <ul class="left hide-on-med-and-down">
                     <li class="active"><a href="/teacher/index.php">Serve</a></li>
                     <li><a href="/teacher/view.php">View</a></li>
-                    <li><a href="/teacher/edit.php">Edit</a></li>
                     <li>
                         <a class="waves-effect waves-red btn white clear">
                             <div class="red-color">Clear</div>
