@@ -23,7 +23,6 @@
                 else if(isset($_POST['remove'])){
                     $myQueue->removeTicketFromID($_SESSION["ticket"]);
                     unset($_SESSION["ticket"]);
-                    
                 }
             }
             if(isset($_SESSION['ticket'])){

@@ -124,5 +124,11 @@ class Queue
         $stmt->closeCursor();
         return $id;
     }
+    public function clearQueue(){
+        $sql = "DELETE FROM tickets WHERE 1=1";
+        $stmt = $this->_db->prepare($sql);
+        $stmt->execute();
+        $stmt->closeCursor();
+    }
 }
 ?>
