@@ -14,17 +14,24 @@
             session_start();
             include_once "inc/constants.inc.php";
             include_once "inc/class.queue.inc.php";
+            $myQueue = new Queue($db);
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $myQueue = new Queue($db);
-                $id = $myQueue->addTicket();
-                $_SESSION["ticket"] = $id;
+                if(isset($_POST['add'])){
+                    $id = $myQueue->addTicket();
+                    $_SESSION["ticket"] = $id;
+                }
+                else if(isset($_POST['remove'])){
+                    $myQueue->removeTicketFromID($_SESSION["ticket"]);
+                    unset($_SESSION["ticket"]);
+                    
+                }
             }
             if(isset($_SESSION['ticket'])){
-                $myQueue = new Queue($db);
                 //PUT IF STATEMENT TO DETERMINE WHETHER THE TICKET HAS BEEN COMPLETED OR NOT.... 
                 $row=  $myQueue->loadTicketFromID($_SESSION['ticket']);
                 $name =  $row['ticketName'];
                 $desc =  $row['ticketDesc'];
+                $id = $row['ticketID'];
                 echo '
                 <div class="row">
                 <h3> Your Ticket </h3>
@@ -37,9 +44,11 @@
                             <p> Description: ' . $desc . ' </p>
                         </div>
                         <div class="card-action">
-                            <a class="waves-effect waves-red btn white">
+                            <form action="' .  htmlspecialchars($_SERVER["PHP_SELF"]) . '"id="remove" method="post">
+                            <button class="waves-effect waves-red btn white" name="remove">
                                 <div class="red-color">Remove</div>
-                            </a>
+                            </button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -67,7 +76,7 @@
                         </div>
                     </div>
                       <div class="row">
-                 <button id="add-submit" class="col m8 offset-m2 s10 offset-s1 l6 offset-l3 waves-effect waves-light btn-large" type="submit">
+                 <button name="add" id="add-submit" class="col m8 offset-m2 s10 offset-s1 l6 offset-l3 waves-effect waves-light btn-large" type="submit">
                     take a ticket
                 </button>
             </div>
