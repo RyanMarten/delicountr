@@ -6,6 +6,7 @@ delicountr
 
 ##Introduction
 This web application was developed as a final project in WHS Intro to CS class.
+See the project [document](https://docs.google.com/document/d/1Gp1qv0JfnpTinqzXSxgfFN67vpEfpDjIKcxZA5FwL6I/edit?usp=sharing) for more information. 
 
 ####Goals
 The goal of this project was to create a web version of a deli ticket dispenser system that is used in a classroom setting to 
@@ -32,7 +33,7 @@ The SQL statements needed for setting up the database are in the file `sqlstatem
 
 This will also run on the xampp distro, which is very friendly for new users. 
 
-Or you can try out the latest version on [cloud9](https://ide.c9.io/ryanmarten/delicountr), where I am currently developing. 
+Or you can try out the latest version on [cloud9](https://delicountr-ryanmarten.c9users.io/), where I am currently developing. 
 
 
 ##Contributions 
