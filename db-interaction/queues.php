@@ -3,7 +3,7 @@
 include_once "inc/class.queue.inc.php";
 include_once "inc/constants.inc.php";
 
- 
+ session_start();
  
 /*
 if(!empty($_POST['action'])) {
@@ -33,10 +33,9 @@ else
 
     include_once "inc/constants.inc.php";
     include_once "inc/class.queue.inc.php";
-  //  if(!empty($_POST['action'])) {
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $myQueue = new Queue($db);
-            $myQueue->addTicket();
+            $id = $myQueue->addTicket();
+            $_SESSION["ticket"] = $id;
         }
- //   } 
 ?>

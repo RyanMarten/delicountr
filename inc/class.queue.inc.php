@@ -66,6 +66,14 @@ class Queue
              echo "<li> Something went wrong. ", $db->errorInfo, "</li>";
         }
     }
+    public function loadTicketFromSession(){
+        $sql = "SELECT * FROM tickets WHERE ticketID=:id";
+        $stmt = $this->_db->prepare($sql);
+        $stmt->bindParam(':id', $_SESSION['ticket'], PDO::PARAM_STR);
+        $stmt->execute();
+        $row = $stmt->fetch();
+        return $row;
+    }
     public function addTicket()
     {
         $ticketDesc = strip_tags(urldecode(trim($_POST['description'])), WHITELIST);
@@ -86,7 +94,6 @@ class Queue
             $stmt->bindParam(':Desc', $ticketDesc, PDO::PARAM_STR);
             $stmt->execute();
             $stmt->closeCursor();
- 
             return $this->_db->lastInsertId();
         }
         catch(PDOException $e)
@@ -98,6 +105,9 @@ class Queue
         
     }
     public function removeTicket(){
+        
+    }
+    public function getNextTicket(){
         
     }
 }

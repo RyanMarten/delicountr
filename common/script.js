@@ -4,8 +4,7 @@ var main = function(){
     $("#name").keydown(function() {
         $(".description").slideDown('slow');
     });
-   
-   
+
+
 }   
 $(document).ready(main); 
-  
