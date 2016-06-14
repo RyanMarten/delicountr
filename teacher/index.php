@@ -25,29 +25,47 @@
         </nav>
     </header>
     <main class="valign-wrapper">
-        <noscript>This site won't update without Java Script</noscript>
         <div class="container center-align">
-        <div class="row">
-        <div class="col s12 m6  offset-m3">
-          <div class="card teal lighten-1">
-            <div class="card-content white-text">
-              <span class="card-title">#314 </span>
-              <h5>Name: Ryan Marten</h5>
-              <br>
-              <p> Description: I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively. </p>
-            </div>
-            <div class="card-action">
-              <a class="waves-effect waves-grey btn white">
-                            <div class="black-color">Done</div>
-              </a>
-            </div>
-            </div>
-          </div>
+            <?php 
+            include_once "../inc/constants.inc.php";
+            include_once "../inc/class.queue.inc.php";
+            session_start();
+            $myQueue = new Queue($db);
+            if(!(isset($_SESSION["serve"]))){
+                $topID= $myQueue->loadTicketFromTop();
+                $_SESSION["serve"] = $topID;
+            }
+            $id = $_SESSION["serve"];
+            if(isset($id)){
+                $row =  $myQueue->loadTicketFromID($id);
+                $name =  $row['ticketName'];
+                $desc =  $row['ticketDesc'];
+                echo '
+                <div class="row">
+                    <div class="col s12 m6  offset-m3">
+                        <div class="card teal lighten-1">
+                            <div class="card-content white-text">
+                                <span class="card-title">#' . $id . ' </span>
+                                <h5>Name: ' . $name . '</h5>
+                                <br>
+                                <p> Description: ' . $desc . ' </p>
+                            </div>
+                            <div class="card-action">
+                                <a class="waves-effect waves-grey btn white">
+                                    <div class="black-color">Done</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>';
+            }
+            else {
+                echo '<h3> No Tickets! </h3>';
+            }
+            ?>
         </div>
-      </div>
-        
-        
+        </div>
+
+
     </main>
 </body>
 

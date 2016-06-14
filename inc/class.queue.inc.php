@@ -46,6 +46,7 @@ class Queue
     }
     public function loadQueueTickets(){
         $sql = "SELECT * FROM tickets";
+        //can do this type of if statement for all of them
         if($stmt = $this->_db->prepare($sql))
         {
         $stmt->execute();
@@ -66,12 +67,13 @@ class Queue
              echo "<li> Something went wrong. ", $db->errorInfo, "</li>";
         }
     }
-    public function loadTicketFromSession(){
+    public function loadTicketFromID($targetID){
         $sql = "SELECT * FROM tickets WHERE ticketID=:id";
         $stmt = $this->_db->prepare($sql);
-        $stmt->bindParam(':id', $_SESSION['ticket'], PDO::PARAM_STR);
+        $stmt->bindParam(':id', $targetID, PDO::PARAM_INT);
         $stmt->execute();
         $row = $stmt->fetch();
+        $stmt->closeCursor();
         return $row;
     }
     public function addTicket()
@@ -84,8 +86,8 @@ class Queue
         $row = $stmt->fetch();
         $ticketID =  $row['ticketID'] + 1;
         $sql = "INSERT INTO tickets
-                    (ticketID, ticketName, ticketDesc)
-                VALUES (:ID, :Name, :Desc)";
+                    (ticketID, ticketName, ticketDesc, ticketStatus)
+                VALUES (:ID, :Name, :Desc, 'inactive')";
         try
         {
             $stmt = $this->_db->prepare($sql);
@@ -104,11 +106,23 @@ class Queue
     public function updateTicket(){
         
     }
-    public function removeTicket(){
-        
+    public function removeTicketFromID($id){
+        $sql = "DELETE FROM tickets WHERE ticketID=". $id;
+        $stmt = $this->_db->prepare($sql);
+        $stmt->execute();
+        $stmt->closeCursor();
     }
-    public function getNextTicket(){
-        
+    public function loadTicketFromTop(){
+        $sql = "SELECT * FROM tickets WHERE ticketStatus='inactive' LIMIT 1";
+        $stmt = $this->_db->prepare($sql);
+        $stmt->execute();
+        $row = $stmt->fetch();
+        $id = $row['ticketID'];
+        $sql = "UPDATE tickets SET ticketStatus='active' WHERE ticketID=" . $id;
+        $stmt = $this->_db->prepare($sql);
+        $stmt->execute();
+        $stmt->closeCursor();
+        return $id;
     }
 }
 ?>

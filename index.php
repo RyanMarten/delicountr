@@ -1,5 +1,4 @@
 <?php include_once "common/header.php"; ?>
-<noscript>This site won't work without Java Script</noscript>
 <header>
     <nav>
         <div class="nav-wrapper red">
@@ -23,7 +22,7 @@
             if(isset($_SESSION['ticket'])){
                 $myQueue = new Queue($db);
                 //PUT IF STATEMENT TO DETERMINE WHETHER THE TICKET HAS BEEN COMPLETED OR NOT.... 
-                $row =  $myQueue->loadTicketFromSession();
+                $row=  $myQueue->loadTicketFromID($_SESSION['ticket']);
                 $name =  $row['ticketName'];
                 $desc =  $row['ticketDesc'];
                 echo '
