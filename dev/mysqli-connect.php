@@ -16,7 +16,7 @@
     $result = mysqli_query($connection, $query);
 
     while ($row = mysqli_fetch_assoc($result)) {
-        echo "The ticket ID is" . $row['ticketID'] . " and the ticket name is: " . $row['ticketName'] . " and the ticket description is: " . $row['ticketDesc'];
+        echo "<p> The ticket ID is" . $row['ticketID'] . " and the ticket name is: " . $row['ticketName'] . " and the ticket description is: " . $row['ticketDesc']. "</p>";
     }
 
 ?>

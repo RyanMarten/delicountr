@@ -10,11 +10,13 @@ mysql-ctl cli
 In cli:
 SHOW DATABASES;
 CREATE DATABASE dc_db DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-CREATE TABLE dc_db.tickets;        //or can use USE dc_db; to select the database first
+//or can use USE dc_db; to select the database first
+CREATE TABLE dc_db.tickets
 (
     ticketID      INT PRIMARY KEY AUTO_INCREMENT,
     ticketName    VARCHAR(50) NOT NULL,
-    ticketDesc    VARCHAR(150)
+    ticketDesc    VARCHAR(150),
+    ticketStatus  VARCHAR(50)
 )
 
 CREATE TABLE dc_db.users
@@ -26,5 +28,6 @@ CREATE TABLE dc_db.users
     verified    TINYINT DEFAULT 0
 )
 
-INSERT INTO tickets (ticketID, ticketName, ticketDesc) VALUES (1, 'Ryan Marten', 'Need Help with SQL!');
+INSERT INTO tickets (ticketID, ticketName, ticketDesc, ticketStatus) VALUES (1, 'Ryan Marten', 'Need Help with SQL!', 'inactive');
+INSERT INTO tickets (ticketID, ticketName, ticketDesc, ticketStatus) VALUES (2, 'Andrew Cabey', 'PACTF is too hard!', 'inactive');
 

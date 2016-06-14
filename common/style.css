@@ -1,5 +1,5 @@
 /* HEADER */
-.title {
+.title-header {
     font-size: 42px;
     font-family: 'Montserrat', monospace;
     color: white;
@@ -11,10 +11,13 @@
    
    
 /* TEACHER */
-.red-text {
+.red-color {
     color: red;
 }
 
+.black-color {
+    color: black;
+}
 
 /* FOOTER */
  body {
