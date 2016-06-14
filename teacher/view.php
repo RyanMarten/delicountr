@@ -27,31 +27,12 @@
         <div class="row">
             <div class="col s12 m12 l6 offset-l3">
         <!-- Can add dismissable class to li to make them swipable on mobile -->
-        <ul class="collapsible popout" data-collapsible="expandable">
-             <li>
-                <div class="collapsible-header"><b>#315</b> Ryan Marten<a href="#!" class="secondary-content"><i class="material-icons red-color">delete</i></a></div>
-                <div class="collapsible-body">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-            </li>
-            <li>
-                <div class="collapsible-header"><b>#316</b> Andrew Cabey<a href="#!" class="secondary-content"><i class="material-icons red-color">delete</i></a></div>
-                <div class="collapsible-body">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-            </li>
-            <li>
-                <div class="collapsible-header"><b>#317</b> Jeremy Brown<a href="#!" class="secondary-content"><i class="material-icons red-color">delete</i></a></div>
-                <div class="collapsible-body">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-            </li>
-            <li>
-                <div class="collapsible-header"><b>#318</b> Brandon Guo<a href="#!" class="secondary-content"><i class="material-icons red-color">delete</i></a></div>
-                <div class="collapsible-body">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-            </li>
+        <ul class="collapsible popout" id="queue" data-collapsible="expandable">
+             <?php
+                include_once "../inc/class.queue.inc.php";
+                $myQueue = new Queue;
+                $myQueue->loadQueueTickets();
+             ?>
         </ul>
         </div>
         </div>

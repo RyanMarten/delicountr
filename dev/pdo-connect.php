@@ -11,9 +11,7 @@
     
         $sql = "SELECT * FROM tickets";
         $stmt = $db->prepare($sql);
-        $stmt->bindParam(':list', $_GET['list'], PDO::PARAM_STR);
         $stmt->execute();
-        $order = 1;
         while($row = $stmt->fetch())
             {
             echo "<p>The ticket ID is" . $row['ticketID'] . " and the ticket name is: " . $row['ticketName'] . " and the ticket description is: " . $row['ticketDesc']."</p>";

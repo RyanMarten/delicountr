@@ -11,34 +11,37 @@
 
 <main class="valign-wrapper">
     <div class="container center-align">
-        <!-- IF NOT IN QUEUE -->
         <div class="row">
             <div class="col m4 offset-m4 l2 offset-l5 s6 offset-s3">
                 <img class="responsive-img" src="images/ticket-600x600.png" alt="delicountr logo" />
             </div>
         </div>
         <div class="row">
-            <form class="col s12">
+            <form class="col s12" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" id="add" method="post">
                 <div class="row">
                     <div class="input-field col s10 offset-s1 m8 offset-m2 l6 offset-l3">
-                        <input id="name" type="text">
+                        <input id="name" type="text" name="name">
                         <label for="name">Name</label>
                     </div>
                 </div>
                 <div class="row description">
                     <div class="input-field col s10 offset-s1 m8 offset-m2  l6 offset-l3">
-                        <textarea id="description" class="materialize-textarea"></textarea>
+                        <textarea id="description" class="materialize-textarea" length="150" name="description"></textarea>
                         <label for="description">Description</label>
                     </div>
                 </div>
+                  <div class="row">
+             <button id="add-submit" class="col m8 offset-m2 s10 offset-s1 l6 offset-l3 waves-effect waves-light btn-large" type="submit">
+                take a ticket
+            </button>
+        </div>
             </form>
         </div>
-        <div class="row">
-            <div class="col m8 offset-m2 s10 offset-s1 l6 offset-l3 waves-effect waves-light btn-large" href="#" onclick="Materialize.toast('Ticket successfully added', 4000)">
-                take a ticket
-            </div>
-        </div>
+      
     </div>
+    <?php 
+        include_once "db-interaction/queues.php"
+        ?>
 </main>
 
 <?php include_once "common/footer.php"; ?>
