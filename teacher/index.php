@@ -31,13 +31,17 @@
             include_once "../inc/class.queue.inc.php";
             session_start();
             $myQueue = new Queue($db);
-            if(!(isset($_SESSION["serve"]))){
+            $id = $_SESSION["serve"];
+            $row =  $myQueue->loadTicketFromID($id);
+            $id = $row['ticketID'];
+            if(!(isset($id))){
                 $topID= $myQueue->loadTicketFromTop();
                 $_SESSION["serve"] = $topID;
+                $row =  $myQueue->loadTicketFromID($topID); 
+                $id = $row['ticketID'];
             }
-            $id = $_SESSION["serve"];
             if(isset($id)){
-                $row =  $myQueue->loadTicketFromID($id);
+                
                 $name =  $row['ticketName'];
                 $desc =  $row['ticketDesc'];
                 echo '
