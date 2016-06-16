@@ -27,7 +27,7 @@ The SQL statements needed for setting up the database are in the file `sqlstatem
 
 This will also run on the xampp distro, which is very friendly for new users. 
   
-Or you can try out the latest version on [cloud9](https://ide.c9.io/ryanmarten/delicountr), where I am currently developing. 
+Or you can try out the latest version on [cloud9](https://delicountr-ryanmarten.c9users.io/), where I am currently developing. 
 
 ##Contributions
 Any ideas to improve this project are appreciated. :D 
