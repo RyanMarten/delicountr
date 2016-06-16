@@ -29,6 +29,11 @@ This will also run on the xampp distro, which is very friendly for new users.
   
 Or you can try out the latest version on [cloud9](https://delicountr-ryanmarten.c9users.io/), where I am currently developing. 
 
+##Current Version
+Alpha Release
+
+*Only desktop version works well*
+
 ##Contributions
 Any ideas to improve this project are appreciated. :D 
 
