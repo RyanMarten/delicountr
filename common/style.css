@@ -18,6 +18,11 @@
 .black-color {
     color: black;
 }
+
+.white-color {
+    color: white;
+}
+
 .inline {
     display: inline;
 }
@@ -25,6 +30,12 @@
 .no-button {
     background:none;
     border:none;
+}
+
+.clear {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 

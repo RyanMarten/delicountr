@@ -23,7 +23,11 @@
                 <ul class="side-nav" id="mobile-demo">
                     <li class="active"><a href="index.php">Serve</a></li>
                     <li><a href="view.php">View</a></li>
-                    <li><a class="waves-effect waves-light btn red lighten-1 clear">Clear</a></li>
+                    <li><form action=<?php echo  htmlspecialchars($_SERVER["PHP_SELF"])?> id="clear" method="post">
+                        <button class="waves-effect waves-red btn-large red lighten-1 clear" name="clear">
+                            <div class="white-color">Clear</div>
+                        </button>
+                        </form></li>
                 </ul>
             </div>
         </nav>

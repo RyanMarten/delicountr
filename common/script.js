@@ -9,7 +9,7 @@ var main = function() {
                 }
             })
             .done(function(data) {
-                $('#status').html("<i>Successful</i>");
+               // $('#status').html("<i>Successful</i>");
                 // show the response
                 $('.queue').html(data);
             })
@@ -28,7 +28,7 @@ var main = function() {
         id = $(this).attr('value');
         //confirm('The id is ' + id); 
         $li = $(this).parent().parent();
-        $('#status').html("<i>Completing Delete...</i>");
+        //$('#status').html("<i>Completing Delete...</i>");
         $.ajax({
                 type: 'POST',
                 url: '../db-interaction/queues.php',
@@ -38,7 +38,7 @@ var main = function() {
                 }
             })
             .done(function(data) {
-                $('#status').html("<i>Successful</i>");
+               // $('#status').html("<i>Successful</i>");
                 $li.remove();
 
 
@@ -47,7 +47,7 @@ var main = function() {
             .fail(function() {
 
                 // just in case posting your form failed
-                $('#status').html('<i>Failed</i>');
+             //   $('#status').html('<i>Failed</i>');
 
             });
 
