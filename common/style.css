@@ -18,6 +18,15 @@
 .black-color {
     color: black;
 }
+.inline {
+    display: inline;
+}
+
+.no-button {
+    background:none;
+    border:none;
+}
+
 
 /* FOOTER */
  body {

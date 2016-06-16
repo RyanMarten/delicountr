@@ -29,18 +29,18 @@
     </header>
     <main>
         <div class="row">
+            <div class="col s12 center-align" id="status">
+            </div>
+        </div>
+        <div class="row">
             <div class="col s12 m12 l6 offset-l3">
         <!-- Can add dismissable class to li to make them swipable on mobile -->
+        
         <ul class="collapsible popout" id="queue" data-collapsible="expandable">
              <?php
                 include_once "../inc/class.queue.inc.php";
                 $myQueue = new Queue;
                 $myQueue->loadQueueTickets();
-                if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                if(isset($_POST['clear'])){
-                     $myQueue->clearQueue();
-                }
-            }
              ?>
         </ul>
         </div>

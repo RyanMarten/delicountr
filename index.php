@@ -25,12 +25,13 @@
                     unset($_SESSION["ticket"]);
                 }
             }
-            if(isset($_SESSION['ticket'])){
-                //PUT IF STATEMENT TO DETERMINE WHETHER THE TICKET HAS BEEN COMPLETED OR NOT.... 
                 $row=  $myQueue->loadTicketFromID($_SESSION['ticket']);
                 $name =  $row['ticketName'];
                 $desc =  $row['ticketDesc'];
                 $id = $row['ticketID'];
+                if(isset($id)){
+                $name =  $row['ticketName'];
+                $desc =  $row['ticketDesc'];
                 echo '
                 <div class="row">
                 <h3> Your Ticket </h3>
