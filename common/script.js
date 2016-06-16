@@ -27,8 +27,8 @@ var main = function() {
     $('a[name="remove').click(function() {
         id = $(this).attr('value');
         //confirm('The id is ' + id); 
+        $li = $(this).parent().parent();
         $('#status').html("<i>Completing Delete...</i>");
-        $('.ticket').remove();
         $.ajax({
                 type: 'POST',
                 url: '../db-interaction/queues.php',
@@ -39,8 +39,7 @@ var main = function() {
             })
             .done(function(data) {
                 $('#status').html("<i>Successful</i>");
-                // show the response
-                $('.queue').html(data);
+                $li.remove();
 
 
 
