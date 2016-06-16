@@ -3,7 +3,7 @@ var main = function() {
         $('.ticket').remove();
         $.ajax({
                 type: 'POST',
-                url: '../db-interaction/queues.php',
+                url: '../common/queues.php',
                 data: {
                     action: 'update'
                 }
@@ -31,7 +31,7 @@ var main = function() {
         //$('#status').html("<i>Completing Delete...</i>");
         $.ajax({
                 type: 'POST',
-                url: '../db-interaction/queues.php',
+                url: '../common/queues.php',
                 data: {
                     action: 'remove',
                     id: id

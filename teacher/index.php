@@ -24,7 +24,7 @@
                     <li class="active"><a href="index.php">Serve</a></li>
                     <li><a href="view.php">View</a></li>
                     <li><form action=<?php echo  htmlspecialchars($_SERVER["PHP_SELF"])?> id="clear" method="post">
-                        <button class="waves-effect waves-red btn-large red lighten-1 clear" name="clear">
+                        <button class="waves-effect waves-red btn-large red lighten-1 clear mobile-button" name="clear">
                             <div class="white-color">Clear</div>
                         </button>
                         </form></li>
@@ -35,8 +35,8 @@
     <main class="valign-wrapper">
         <div class="container center-align">
             <?php 
-            include_once "../inc/constants.inc.php";
-            include_once "../inc/class.queue.inc.php";
+            include_once "../common/constants.inc.php";
+            include_once "../common/class.queue.inc.php";
             session_start();
             $myQueue = new Queue($db);
             if ($_SERVER["REQUEST_METHOD"] == "POST") {

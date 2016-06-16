@@ -12,8 +12,8 @@
     <div class="container center-align">
         <?php 
             session_start();
-            include_once "inc/constants.inc.php";
-            include_once "inc/class.queue.inc.php";
+            include_once "common/constants.inc.php";
+            include_once "common/class.queue.inc.php";
             $myQueue = new Queue($db);
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if(isset($_POST['add'])){

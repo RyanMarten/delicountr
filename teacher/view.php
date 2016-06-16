@@ -23,7 +23,7 @@
                     <li><a href="index.php">Serve</a></li>
                     <li class="active"><a href="view.php">View</a></li>
                     <li><form action=<?php echo  htmlspecialchars($_SERVER["PHP_SELF"])?> id="clear" method="post">
-                        <button class="waves-effect waves-red btn-large red lighten-1 clear" name="clear">
+                        <button class="waves-effect waves-red btn-large red lighten-1 clear mobile-button" name="clear">
                             <div class="white-color">Clear</div>
                         </button>
                         </form></li>
@@ -41,7 +41,8 @@
         <!-- Can add dismissable class to li to make them swipable on mobile -->
          <ul class='collapsible popout queue' id='queue' data-collapsible='expandable'>
              <?php
-                include_once "../inc/class.queue.inc.php";
+                include_once "../common/constants.inc.php";
+                include_once "../common/class.queue.inc.php";
                 $myQueue = new Queue;
                 $myQueue->loadQueueTickets();
              ?>

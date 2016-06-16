@@ -1,7 +1,7 @@
 <?php
 
-include_once "../inc/class.queue.inc.php";
-include_once "../inc/constants.inc.php";
+include_once "class.queue.inc.php";
+include_once "constants.inc.php";
 
 $myQueue = new Queue($db);
 /* echo 'TEST';
