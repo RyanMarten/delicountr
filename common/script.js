@@ -1,10 +1,9 @@
 var main = function() {
     setInterval(function() {
         $('.ticket').remove();
-        /*
         $.ajax({
                 type: 'POST',
-                url: '../db-interaction/remove.php',
+                url: '../db-interaction/queues.php',
                 data: {
                     action: 'update'
                 }
@@ -19,8 +18,7 @@ var main = function() {
             });
         // to prevent refreshing the whole page page
         return false;
-        */
-    }, 5000); //5 seconds
+    }, 60000); //60 seconds
     $(".description").hide();
     $(".button-collapse").sideNav();
     $("#name").keydown(function() {
@@ -33,7 +31,7 @@ var main = function() {
         $('.ticket').remove();
         $.ajax({
                 type: 'POST',
-                url: '../db-interaction/remove.php',
+                url: '../db-interaction/queues.php',
                 data: {
                     action: 'remove',
                     id: id

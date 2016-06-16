@@ -28,7 +28,7 @@ CREATE TABLE dc_db.users
     verified    TINYINT DEFAULT 0
 )
 
-INSERT INTO tickets (ticketID, ticketName, ticketDesc, ticketStatus) VALUES (1, 'Ryan Marten', 'Need Help with SQL!', 'inactive');
-INSERT INTO tickets (ticketID, ticketName, ticketDesc, ticketStatus) VALUES (2, 'Andrew Cabey', 'PACTF is too hard!', 'inactive');
-INSERT INTO tickets (ticketID, ticketName, ticketDesc, ticketStatus) VALUES (3, 'Jeremy Brown', 'Where is Utah?', 'inactive');
-INSERT INTO tickets (ticketID, ticketName, ticketDesc, ticketStatus) VALUES (4, 'Brandon Guo', 'Who are the wheelin rubies?', 'inactive');
+INSERT INTO tickets (ticketID, ticketName, ticketDesc, ticketStatus) VALUES (11, 'Ryan Marten', 'Need Help with SQL!', 'inactive');
+INSERT INTO tickets (ticketID, ticketName, ticketDesc, ticketStatus) VALUES (12, 'Andrew Cabey', 'PACTF is too hard!', 'inactive');
+INSERT INTO tickets (ticketID, ticketName, ticketDesc, ticketStatus) VALUES (13, 'Jeremy Brown', 'Where is Utah?', 'inactive');
+INSERT INTO tickets (ticketID, ticketName, ticketDesc, ticketStatus) VALUES (14, 'Brandon Guo', 'Who are the wheelin rubies?', 'inactive');
