@@ -19,6 +19,9 @@
                 if(isset($_POST['add'])){
                     $id = $myQueue->addTicket();
                     $_SESSION["ticket"] = $id;
+                     // Redirect to this page.
+                    header("Location: " . $_SERVER['REQUEST_URI']);
+                    exit();
                 }
                 else if(isset($_POST['remove'])){
                     $myQueue->removeTicketFromID($_SESSION["ticket"]);

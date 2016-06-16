@@ -13,6 +13,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     {
          case 'remove':
             $myQueue->removeTicketFromID($_POST['id']);
+            header("Location: " . $_SERVER['REQUEST_URI']);
+            exit();
             break;
        case 'update':
             $myQueue->loadQueueTickets();

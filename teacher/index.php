@@ -42,7 +42,10 @@
                 }
                 if(isset($_POST['clear'])){
                     $myQueue->clearQueue();
+                    
                 }
+                 header("Location: " . $_SERVER['REQUEST_URI']);
+                    exit();
             }
             $id = $_SESSION["serve"];
             $row =  $myQueue->loadTicketFromID($id);
