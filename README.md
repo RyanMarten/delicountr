@@ -16,17 +16,18 @@ There are also options for the teacher to view the whole queue, edit the queue, 
 Additional features can include creating a new queue, so there can be multiple queues for multiple classrooms at the same time, and a special "sharing" link is generated for each queue. 
 Password protecting the teacher page, and being able to change that password. Also security of the application, and protection from it being broken can be improved. 
 
-##Dependencies
+##Try it!
 The run this web application you need
 - [x] Apache webserver
 - [x] MySQL 
 - [x] PHP 
 
 
-This will run on the xampp distro, which is very friendly for new users. 
-
-
 The SQL statements needed for setting up the database are in the file `sqlstatements.txt`
+
+This will also run on the xampp distro, which is very friendly for new users. 
+  
+Or you can try out the latest version on [cloud9](https://ide.c9.io/ryanmarten/delicountr), where I am currently developing. 
 
 ##Contributions
 Any ideas to improve this project are appreciated. :D 
