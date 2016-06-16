@@ -53,7 +53,7 @@ class Queue
         while($row = $stmt->fetch())
             {
             echo "
-                 <li>
+                 <li class='ticket'>
                 <div class='collapsible-header'>
                 <b>#". $row['ticketID'] . "</b> " . $row['ticketName'] . "
                 <a class='secondary-content' name='remove' value=" . $row['ticketID'] . ">

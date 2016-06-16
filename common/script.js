@@ -1,41 +1,65 @@
-var main = function(){
+var main = function() {
+    setInterval(function() {
+        $('.ticket').remove();
+        /*
+        $.ajax({
+                type: 'POST',
+                url: '../db-interaction/remove.php',
+                data: {
+                    action: 'update'
+                }
+            })
+            .done(function(data) {
+                $('#status').html("<i>Successful</i>");
+                // show the response
+                $('.queue').html(data);
+            })
+            .fail(function() {
+
+            });
+        // to prevent refreshing the whole page page
+        return false;
+        */
+    }, 5000); //5 seconds
     $(".description").hide();
     $(".button-collapse").sideNav();
     $("#name").keydown(function() {
         $(".description").slideDown('slow');
     });
-    $('a[name="remove').click(function(){
-        $id = $(this).attr('value');
-        confirm('The id is ' + $id); 
+    $('a[name="remove').click(function() {
+        id = $(this).attr('value');
+        //confirm('The id is ' + id); 
         $('#status').html("<i>Completing Delete...</i>");
-        /*
-         * 'post_receiver.php' - where you will pass the form data
-         * $(this).serialize() - to easily read form data
-         * function(data){... - data contains the response from post_receiver.php
-         */
+        $('.ticket').remove();
         $.ajax({
-            type: 'POST',
-            url: '../db-interaction/remove.php', 
-            data: "{'id' : " + $id + ", 'action' : 'remove'}"
-        })
-        .done(function(data){
-             
-            // show the response
-            $('#status').html('<i>Successful: ' + data + '</i>');
-             
-        })
-        .fail(function() {
-         
-            // just in case posting your form failed
-            $('#status').html('<i>Failed</i>');
-             
-        });
- 
+                type: 'POST',
+                url: '../db-interaction/remove.php',
+                data: {
+                    action: 'remove',
+                    id: id
+                }
+            })
+            .done(function(data) {
+                $('#status').html("<i>Successful</i>");
+                // show the response
+                $('.queue').html(data);
+
+
+
+            })
+            .fail(function() {
+
+                // just in case posting your form failed
+                $('#status').html('<i>Failed</i>');
+
+            });
+
+
         // to prevent refreshing the whole page page
         return false;
     });
-        
- 
 
-}   
-$(document).ready(main); 
+
+
+}
+$(document).ready(main);

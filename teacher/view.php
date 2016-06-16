@@ -35,14 +35,13 @@
         <div class="row">
             <div class="col s12 m12 l6 offset-l3">
         <!-- Can add dismissable class to li to make them swipable on mobile -->
-        
-        <ul class="collapsible popout" id="queue" data-collapsible="expandable">
+         <ul class='collapsible popout queue' id='queue' data-collapsible='expandable'>
              <?php
                 include_once "../inc/class.queue.inc.php";
                 $myQueue = new Queue;
                 $myQueue->loadQueueTickets();
              ?>
-        </ul>
+            </ul>
         </div>
         </div>
     </main>
