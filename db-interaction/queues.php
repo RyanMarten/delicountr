@@ -13,7 +13,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     {
          case 'remove':
             $myQueue->removeTicketFromID($_POST['id']);
-            $myQueue->loadQueueTickets();
             break;
        case 'update':
             $myQueue->loadQueueTickets();
