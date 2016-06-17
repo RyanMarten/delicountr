@@ -40,6 +40,15 @@
 
 .collapsible-header {
     font-size: 1.15rem;
+    word-wrap: break-word;
+}
+
+.collaspible-footer {
+    word-wrap: break-word;
+}
+
+.card-content {
+    word-wrap: break-word;
 }
 
 .clickable-div 

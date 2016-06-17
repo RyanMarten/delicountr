@@ -66,7 +66,7 @@ include_once "common/header.php"; ?>
                 echo '
                 <div class="row">
                     <div class="col s12 m6  offset-m3">
-                        <div class="card  teal lighten-4">
+                        <div class="card  grey lighten-4">
                             <div class="card-content">
                                 <span class="card-title">#' . $id . ' </span>
                                 <h5>Name: ' . $name . '</h5>
@@ -75,8 +75,8 @@ include_once "common/header.php"; ?>
                             </div>
                             <div class="card-action">
                                 <form action="' .  htmlspecialchars($_SERVER["PHP_SELF"]) . '"id="remove" method="post">
-                                <button class="waves-effect waves-grey btn  teal accent-1" name="remove">
-                                    <div class="black-color">Done</div>
+                                <button class="waves-effect waves-grey btn red lighten-2" name="remove">
+                                    <div class="white-color">Done</div>
                                 </button>
                                 </form>
                             </div>

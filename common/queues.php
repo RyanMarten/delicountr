@@ -4,10 +4,6 @@ include_once "class.queue.inc.php";
 include_once "constants.inc.php";
 
 $myQueue = new Queue($db);
-/* echo 'TEST';
-echo "<pre>";
-print_r($_POST);
-echo "</pre>"; */
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     switch($_POST['action'])
     {

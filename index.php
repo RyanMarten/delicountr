@@ -39,7 +39,7 @@ include_once "common/header.php"; ?>
                 <div class="row">
                 <h3> Your Ticket </h3>
                 <div class="col s12 m6  offset-m3">
-                    <div class="card teal lighten-4">
+                    <div class="card grey lighten-4">
                         <div class="card-content">
                             <span class="card-title">#' . $id .'</span>
                             <h5>Name: ' . $name .'</h5>
