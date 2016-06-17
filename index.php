@@ -39,8 +39,8 @@
                 <div class="row">
                 <h3> Your Ticket </h3>
                 <div class="col s12 m6  offset-m3">
-                    <div class="card teal lighten-1">
-                        <div class="card-content white-text">
+                    <div class="card teal lighten-4">
+                        <div class="card-content">
                             <span class="card-title">#' . $id .'</span>
                             <h5>Name: ' . $name .'</h5>
                             <br>
@@ -48,8 +48,8 @@
                         </div>
                         <div class="card-action">
                             <form action="' .  htmlspecialchars($_SERVER["PHP_SELF"]) . '"id="remove" method="post">
-                            <button class="waves-effect waves-red btn white" name="remove">
-                                <div class="red-color">Remove</div>
+                            <button class="waves-effect waves-light btn red lighten-2" name="remove">
+                                <div class="white-color">Remove</div>
                             </button>
                             </form>
                         </div>

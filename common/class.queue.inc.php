@@ -56,12 +56,12 @@ class Queue
                  <li class='ticket'>
                 <div class='collapsible-header'>
                 <b>#". $row['ticketID'] . "</b> " . $row['ticketName'] . "
-                <a class='secondary-content' name='remove' value=" . $row['ticketID'] . ">
-                    <i class='material-icons red-color'>delete</i>
-                </a>
                 </div>
                 <div class='collapsible-body'>
                     <p>" . $row['ticketDesc']."</p>
+                    <p><a class='clickable-div btn-floating btn-large red' name='remove' value=" . $row['ticketID'] . ">
+                    <i class='material-icons white-color'>delete</i>
+                </a> </p>
                 </div>
             </li>";
             

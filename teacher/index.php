@@ -66,8 +66,8 @@
                 echo '
                 <div class="row">
                     <div class="col s12 m6  offset-m3">
-                        <div class="card teal lighten-1">
-                            <div class="card-content white-text">
+                        <div class="card  teal lighten-4">
+                            <div class="card-content">
                                 <span class="card-title">#' . $id . ' </span>
                                 <h5>Name: ' . $name . '</h5>
                                 <br>
@@ -75,7 +75,7 @@
                             </div>
                             <div class="card-action">
                                 <form action="' .  htmlspecialchars($_SERVER["PHP_SELF"]) . '"id="remove" method="post">
-                                <button class="waves-effect waves-grey btn white" name="remove">
+                                <button class="waves-effect waves-grey btn  teal accent-1" name="remove">
                                     <div class="black-color">Done</div>
                                 </button>
                                 </form>
