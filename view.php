@@ -1,4 +1,7 @@
-<?php include_once "common/header.php"; ?>
+<?php
+$pageTitle = "View";
+include_once "common/header.php"; 
+ ?>
 
 <body>
     <header>

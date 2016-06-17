@@ -1,4 +1,5 @@
-<?php include_once "common/header.php"; ?>
+<?php $pageTitle = "Serve";
+include_once "common/header.php"; ?>
 
 <body>
     <noscript>This site won't work without Java Script</noscript>

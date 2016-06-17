@@ -1,4 +1,5 @@
-<?php include_once "common/header.php"; ?>
+<?php $pageTitle = "Take"; 
+include_once "common/header.php"; ?>
 <header>
     <nav>
         <div class="nav-wrapper red">
