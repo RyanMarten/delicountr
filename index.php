@@ -12,7 +12,6 @@ include_once "common/header.php"; ?>
 <main class="valign-wrapper">
     <div class="container center-align">
         <?php 
-            session_start();
             include_once "common/constants.inc.php";
             include_once "common/class.queue.inc.php";
             $myQueue = new Queue($db);

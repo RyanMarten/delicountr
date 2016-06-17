@@ -23,7 +23,9 @@
 
   <!-- TITLE -->
   <title>Delicountr |
-    <?php echo $pageTitle ?> </title>
+    <?php 
+    session_start();
+    echo $pageTitle ?> </title>
 
 </head>
 <body>

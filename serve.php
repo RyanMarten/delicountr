@@ -38,7 +38,6 @@ include_once "common/header.php"; ?>
             <?php 
             include_once "common/constants.inc.php";
             include_once "common/class.queue.inc.php";
-            session_start();
             $myQueue = new Queue($db);
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if(isset($_POST['remove'])){ 
