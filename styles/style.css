@@ -38,6 +38,15 @@
     margin-left: 10%;
 }
 
+.collapsible-header {
+    font-size: 1.15rem;
+}
+
+.clickable-div 
+    {
+         cursor: pointer;
+    }
+
 
 /* FOOTER */
  body {
