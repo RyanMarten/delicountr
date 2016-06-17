@@ -4,7 +4,7 @@
 <footer class="page-footer red">
 	<div class="container">
 		<div class="row center-align">
-			<a class="white-text" href="/teacher/index.php">Teacher Access</a> // 
+			<a class="white-text" href="serve.php">Teacher Access</a> // 
 			<a class="white-text" href="https://github.com/RyanMarten/delicountr" target="_blank"><i class="fa fa-github"></i>Github</a> //
 			<a class="white-text" href="http://lmgtfy.com/?q=How+to+use+google" target="_blank">More Help</a>
 		</div>

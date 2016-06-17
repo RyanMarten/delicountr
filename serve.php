@@ -1,15 +1,15 @@
-<?php include_once "../common/header.php"; ?>
+<?php include_once "common/header.php"; ?>
 
 <body>
     <noscript>This site won't work without Java Script</noscript>
     <header>
         <nav>
             <div class="nav-wrapper red">
-                <a href="/index.php" class="brand-logo title-header center">Delicountr</a>
+                <a href="index.php" class="brand-logo title-header center">Delicountr</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="left hide-on-med-and-down">
-                    <li class="active"><a href="/teacher/index.php">Serve</a></li>
-                    <li><a href="/teacher/view.php">View</a></li>
+                    <li class="active"><a href="serve.php">Serve</a></li>
+                    <li><a href="view.php">View</a></li>
                     <li>
                         <a>
                         <form action=<?php echo  htmlspecialchars($_SERVER["PHP_SELF"])?> id="clear" method="post">
@@ -35,8 +35,8 @@
     <main class="valign-wrapper">
         <div class="container center-align">
             <?php 
-            include_once "../common/constants.inc.php";
-            include_once "../common/class.queue.inc.php";
+            include_once "common/constants.inc.php";
+            include_once "common/class.queue.inc.php";
             session_start();
             $myQueue = new Queue($db);
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -94,4 +94,4 @@
     </main>
 </body>
 
-<?php include_once "../common/footer.php"; ?>
+<?php include_once "common/footer.php"; ?>
