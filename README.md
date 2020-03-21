@@ -39,4 +39,19 @@ Any ideas to improve this project are appreciated. :D
 
 Thanks 
 
+# Screenshots
+### Student View: Initial
+![student-initial](/screenshots/student-initial.png)
+
+### Student View: Ticket Taken
+![student-ticket](/screenshots/student-ticket.png)
+
+### Teacher View: Serve
+![teacher-serve](/screenshots/teacher-serve.png)
+
+### Teacher View: All Tickets
+![teacher-view](/screenshots/teacher-view.png)
+
+
+
 --Ryan 
