@@ -1,7 +1,7 @@
 # delicountr
 
 ## Introduction
-This web application was developed as part of a final in an Intro to CS class.
+This web application was developed as part of an independent project in Intro to CS (Westwood High School 2016). This application was designed and built completely by me, as a great introduction into web programming. 
 
 #### Goals
 The goal of this projects was to create a web version of a deli counter ticket system that is used in a classroom setting, used to 
